@@ -16,18 +16,6 @@ body {
   align-items: center;
   gap: 60px;
 }
-    .pbottom {
-    display: flex;
-    width: 400px;
-    border-bottom: 1px solid black;
-    justify-content: center;
-    }
-.pbottom1 {
-  display: flex;
-  width: 400px;
-  border-bottom: 1px solid white;
-  justify-content: center;
-}
 .head {
   display: flex;
   height: 150px;
@@ -43,14 +31,11 @@ body {
   align-items: center;
   margin-bottom: 70px;
 }
-.box1 {
+.box1, .box3{
   display: flex;
   background-color: white;
   width: 480px;
   height: 600px;
-
-  flex-direction: column;  align-items: center;
-  justify-content: space-evenly;
 }
 .box2 {
   display: flex;
@@ -61,59 +46,55 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.box3 {
-  display: flex;
-  background-color: white;
-  width: 480px;
-  height: 600px;
-  border-radius: 25px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 20px;
+.insidebox13 {
+display: flex;
+width: 480px;
+height: 580px;
+flex-direction: column;
+align-items: center;
 }
-.insideboxx {
+.insidebox2 {
   display: flex;
   width: 480px;
   height: 600px;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-evenly; */
-  color: black;
-}
-.insidebox {
-  display: flex;
-  width: 480px;
-  height: 600px;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: space-evenly; */
   color: white;
 }
-.pdetail {
-  font-size: 60px;
+.pricedetail {
+  font-size: 80px;
 }
-.btn {
+.setup{
+    margin-top: -5px;
+}
+.btn13 {
   border-radius: 10px;
-  width: 400px;
+  width: 360px;
   height: 50px;
   color: white;
   cursor: pointer;
   margin-top: 20px;
-  margin-bottom: 10px;
-
   background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 }
-.btn1 {
+.btn2 {
   border-radius: 10px;
   width: 400px;
   height: 50px;
   background-color: white;
-  color: hsl(236, 72%, 79%);
+  color: hsl(236, 31%, 44%);
   cursor: pointer;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 25px;
+}
+.borderline, .borderline2{
+    display: flex;
+    width: 350px;
+    justify-content: center;
+}
+.borderline{
+    border-bottom: 1px solid black;
+}
+.borderline2{
+    border-bottom: 1px solid white;
 }
 .header {
   font-size: 35px;
@@ -178,7 +159,3 @@ input:checked + .slider:before {
 span {
   font-size: 30px;
 }
-/* p{
-    padding: 2px;
-    margin-bottom: 30px;
-} */
