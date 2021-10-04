@@ -34,6 +34,7 @@ body {
 .box1, .box3{
   display: flex;
   background-color: white;
+  border-radius: 25px;
   width: 480px;
   height: 600px;
 }
@@ -63,6 +64,7 @@ align-items: center;
 }
 .pricedetail {
   font-size: 80px;
+ 
 }
 .setup{
     margin-top: -5px;
@@ -98,6 +100,7 @@ align-items: center;
 }
 .header {
   font-size: 35px;
+ 
 }
 .switch {
   position: relative;
@@ -105,14 +108,13 @@ align-items: center;
   width: 60px;
   height: 34px;
 }
-
 /* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
+  
 }
-
 /* The slider */
 .slider {
   position: absolute;
@@ -124,14 +126,17 @@ align-items: center;
   background-color: #ccc;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  width:65px;
+  height: 35px;
+ 
 }
 .slider:before {
   position: absolute;
   content: "";
   height: 26px;
   width: 26px;
-  left: 4px;
-  bottom: 4px;
+    left: 4px;
+    bottom: 4px;
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -151,11 +156,18 @@ input:checked + .slider:before {
 }
 .slider.round {
   border-radius: 34px;
+  
 }
 
 .slider.round:before {
   border-radius: 50%;
 }
+
 span {
-  font-size: 30px;
+  font-size: 40px;
+}
+
+#toCheck{
+  margin-top: 15px;
+  margin-right: 10px;
 }

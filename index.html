@@ -12,18 +12,19 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,500&display=swap"
       rel="stylesheet"
-    />
+      />
     <title>Document</title>
     <script>
-      function abc() {
-        if('label'.click()){
-          document.getElementById("pdetail1").innerHTML = 199.9;
-          document.getElementById("pdetail2").innerHTML = 249.9;
-          document.getElementById("pdetail3").innerHTML = 399.9;
-        } else {
+      function ChangePrice() {
+        if (toggle.checked==true) {
           document.getElementById("pdetail1").innerHTML = 19.99;
           document.getElementById("pdetail2").innerHTML = 24.99;
           document.getElementById("pdetail3").innerHTML = 39.99;
+          
+        } else {
+          document.getElementById("pdetail1").innerHTML = 199.9;
+          document.getElementById("pdetail2").innerHTML = 249.9;
+          document.getElementById("pdetail3").innerHTML = 399.9;
         }
       }
     </script>
@@ -36,9 +37,8 @@
         <div class="label">
           Annually &nbsp &nbsp
           <label class="switch">
-            <input type="checkbox" onclick="abc()" />
-            <span class="slider round"> </span> </label
-          >&nbsp &nbsp Monthly
+            <input type="checkbox" id="toggle" onclick="ChangePrice()" />
+            <span class="slider round"> </span> </label>&nbsp &nbsp Monthly
         </div>
       </div>
       <div class="outer">
@@ -46,8 +46,8 @@
           <div class="insidebox13">
             <p>Basic</p>
             <div class="borderline">
-              <p class="pricedetail setup" id="pdetail1">
-                <span>$ </span> 19.99
+              <span id="toCheck">$ </span><p class="pricedetail setup" id="pdetail1">
+               19.99
               </p>
             </div>
             <div class="borderline">
@@ -68,8 +68,8 @@
           <div class="insidebox2">
             <p>Professional</p>
             <div class="borderline2">
-              <p class="pricedetail setup" id="pdetail2">
-                <span>$ </span>24.99
+              <span id="toCheck">$ </span>  <p class="pricedetail setup" id="pdetail2">
+                24.99
               </p>
             </div>
             <div class="borderline2">
@@ -88,9 +88,11 @@
           <div class="insidebox13">
             <p>Master</p>
             <div class="borderline">
-              <p class="pricedetail setup" id="pdetail3">
-                <span>$ </span> 39.99
+              
+              <span id="toCheck">$ </span>  <p class="pricedetail setup" id="pdetail3">
+               39.99
               </p>
+            
             </div>
             <div class="borderline">
               <p>2 TB Storage</p>
